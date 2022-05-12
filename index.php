@@ -3,11 +3,16 @@
 require __DIR__ . '/data/animal.php';
 
 
-var_dump($monge);
-var_dump($purina);
+
+
+$monge = new product ("Monge", "Pappa cani", "58");
+$purina = new product ("Purina", "Pappa gatti", "68");
 
 $monge -> setStar();
 // $monge -> setValutazione($monge -> $star);
+
+var_dump($monge);
+var_dump($purina);
 
 ?>
 

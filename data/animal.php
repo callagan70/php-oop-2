@@ -6,7 +6,7 @@ class product{
     public $star;
     // public $valutazione;
 
-    public function _construct ($_name, $_descrizione, $_price, $_star){
+    public function __construct ($_name, $_descrizione, $_price){
         $this -> name -> $_name;
         $this -> descrizione = $_descrizione;
         $this -> price = $_price;
@@ -70,10 +70,6 @@ class product{
     //   return $this -> valutazione;
     // }
 //-------------------------------
-
-$monge = new product ("Monge", "Pappa cani", 58);
-$purina = new product ("Purina", "Pappa gatti", 68);
-
 
 }?>
 
