@@ -2,14 +2,8 @@
 
 require __DIR__ . '/data/animal.php';
 
-
-
-
 $monge = new product ("Monge", "Pappa cani", "58");
 $purina = new product ("Purina", "Pappa gatti", "68");
-
-$monge -> setStar();
-// $monge -> setValutazione($monge -> $star);
 
 var_dump($monge);
 var_dump($purina);
@@ -34,9 +28,10 @@ Alcuni prodotti (es. antipulci) avranno la caratteristica che saranno disponibil
 </head>
 <body>
 
-    <p> Stelle: <?php echo $monge -> getStar() ?> </p>
+
     <p>Nome: <?= $monge -> name?></p>
-    <!-- <p> Valutazione: <?php echo $monge -> getValutazione() ?> </p> -->
+    <p> Stelle: <?php echo $monge -> star ?> </p>
+    <p> Valutazione: <?php echo $monge -> getValutazione() ?> </p>
     
 </body>
 </html>
