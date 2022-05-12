@@ -1,6 +1,6 @@
-<?php
+<?
 
-class product{
+class productName{
     public $name;
     public $descrizione;
     public $price;
@@ -16,7 +16,7 @@ class product{
       }
 
 
-//-------------------------------
+//------------------------------- Star
   public function setStar(){
     $this -> star = rand(1, 5);
     return $this;
@@ -25,7 +25,7 @@ class product{
   public function getStar(){
     return $this -> star;
   }
-//-------------------------------
+//------------------------------- Name
      public function setName($_name){
          $this -> name = $_name;
        return $this;
@@ -34,7 +34,7 @@ class product{
      public function getName(){
          return $this -> name;
        }
-//-------------------------------
+//------------------------------- Description
        public function setDescrizione($_descrizione){
          $this -> descrizione = $_descrizione;
        return $this;
@@ -43,7 +43,7 @@ class product{
      public function getDescrizione(){
          return $this -> descrizione;
        }
-//-------------------------------
+//------------------------------- Price
        public function setPrice($_price){
          $this -> price = $_price;
        return $this;
@@ -52,19 +52,19 @@ class product{
      public function getPrice(){
          return $this -> price;
        }
-//-------------------------------
+//------------------------------- Valutazione
 
      public function setValutazione(){
          if($this -> star == 1){
-           $this -> valutazione ="Mediocre";
+           $this -> valutazione = "Mediocre";
          }elseif ($this -> star == 2){
-           $this -> valutazione ="Media";
+           $this -> valutazione = "Media";
          }elseif($this -> star == 3){
-           $this -> valutazione ="Buona";
+           $this -> valutazione = "Buona";
          }elseif($this -> star == 4){
-           $this -> valutazione ="Ottima";
+           $this -> valutazione = "Ottima";
          }else{
-           $this -> valutazione ="eccellente";
+           $this -> valutazione = "Eccellente";
          }
 
         return $this;

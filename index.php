@@ -2,8 +2,8 @@
 
 require __DIR__ . '/data/animal.php';
 
-$monge = new product ("Monge", "Pappa cani", "58");
-$purina = new product ("Purina", "Pappa gatti", "68");
+$monge = new productName ("Monge", "Pappa cani", 58);
+$purina = new productName ("Purina", "Pappa gatti", 68);
 
 var_dump($monge);
 var_dump($purina);
