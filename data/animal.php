@@ -5,12 +5,12 @@ class product{
     public $descrizione;
     public $price;
     public $star;
-    // public $valutazione;
+    public $valutazione;
 
     public function __construct ($_name, $_descrizione, $_price){
-        $this -> name = $_name;
-        $this -> descrizione = $_descrizione;
-        $this -> price = $_price;
+        $this -> setName($_name);
+        $this -> setDescrizione($_descrizione);
+        $this -> setPrice($_price);
         $this -> setStar();
         $this -> setValutazione();
       }
@@ -26,32 +26,32 @@ class product{
     return $this -> star;
   }
 //-------------------------------
-    // public function setName($_name){
-    //     $this -> name = $_name;
-    //     return $this;
-    // }
+     public function setName($_name){
+         $this -> name = $_name;
+       return $this;
+     }
 
-    // public function getName(){
-    //     return $this -> name;
-    //   }
+     public function getName(){
+         return $this -> name;
+       }
 //-------------------------------
-    //   public function setDescrizione($_descrizione){
-    //     $this -> descrizione = $_descrizione;
-    //     return $this;
-    // }
+       public function setDescrizione($_descrizione){
+         $this -> descrizione = $_descrizione;
+       return $this;
+     }
 
-    // public function getDescrizione(){
-    //     return $this -> descrizione;
-    //   }
+     public function getDescrizione(){
+         return $this -> descrizione;
+       }
 //-------------------------------
-    //   public function setPrice($_price){
-    //     $this -> price = $_price;
-    //     return $this;
-    // }
+       public function setPrice($_price){
+         $this -> price = $_price;
+       return $this;
+     }
 
-    // public function getPrice(){
-    //     return $this -> price;
-    //   }
+     public function getPrice(){
+         return $this -> price;
+       }
 //-------------------------------
 
      public function setValutazione(){
