@@ -1,12 +1,24 @@
 <?php 
 
 require __DIR__ . '/data/animal.php';
+require __DIR__ . '/extends/food.php';
+require __DIR__ . '/extends/toy.php';
 
 $monge = new productName ("Monge", "Pappa cani", 58);
 $purina = new productName ("Purina", "Pappa gatti", 68);
 
+$palla = new Toys ("Palla", "Pallina", 58);
+$corda = new Toys ("Corda", "Tessuto", 68);
+
+$crocchette = new food ("Crocchette", "Molto buone", 58);
+$umido = new food ("Umido", "Scatolette", 68);
+
 var_dump($monge);
 var_dump($purina);
+var_dump($palla);
+var_dump($corda);
+var_dump($crocchette);
+var_dump($umido);
 
 ?>
 
