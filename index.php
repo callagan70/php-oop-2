@@ -2,13 +2,10 @@
 
 require __DIR__ . '/data/animal.php';
 
-
 $monge = new productName ("Monge", "Pappa cani", 58);
 $purina = new productName ("Purina", "Pappa gatti", 68);
-
 $palla = new Toys ("Palla", "Pallina", 58);
 $corda = new Toys ("Corda", "Tessuto", 68);
-
 $crocchette = new Food ("Crocchette", "Molto buone", 58);
 $umido = new Food ("Umido", "Scatolette", 68);
 
