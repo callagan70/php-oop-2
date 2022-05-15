@@ -1,76 +1,76 @@
 <?php
 
 class Toys{
-    public $name;
-    public $descrizione;
-    public $price;
-    public $star;
-    public $valutazione;
+    public $nameToys;
+    public $descrizioneToys;
+    public $priceToys;
+    public $starToys;
+    public $valutazioneToys;
 
-    public function __construct ($_name, $_descrizione, $_price){
-        $this -> setName($_name);
-        $this -> setDescrizione($_descrizione);
-        $this -> setPrice($_price);
+    public function __construct ($_nameToys, $_descrizioneToys, $_priceToys){
+        $this -> setName($_nameToys);
+        $this -> setDescrizione($_descrizioneToys);
+        $this -> setPrice($_priceToys);
         $this -> setStar();
         $this -> setValutazione();
       }
 
       //------------------------------- Star
   public function setStar(){
-    $this -> star = rand(1, 5);
+    $this -> starToys = rand(1, 5);
     return $this;
   }
 
   public function getStar(){
-    return $this -> star;
+    return $this -> starToys;
   }
 //------------------------------- Name
-     public function setName($_name){
-         $this -> name = $_name;
+     public function setName($_nameToys){
+         $this -> nameToys = $_nameToys;
        return $this;
      }
 
      public function getName(){
-         return $this -> name;
+         return $this -> nameToys;
        }
 //------------------------------- Description
-       public function setDescrizione($_descrizione){
-         $this -> descrizione = $_descrizione;
+       public function setDescrizione($_descrizioneToys){
+         $this -> descrizioneToys = $_descrizioneToys;
        return $this;
      }
 
      public function getDescrizione(){
-         return $this -> descrizione;
+         return $this -> descrizioneToys;
        }
 //------------------------------- Price
-       public function setPrice($_price){
-         $this -> price = $_price;
+       public function setPrice($_priceToys){
+         $this -> priceToys = $_priceToys;
        return $this;
      }
 
      public function getPrice(){
-         return $this -> price;
+         return $this -> priceToys;
        }
 //------------------------------- Valutazione
 
      public function setValutazione(){
-         if($this -> star == 1){
-           $this -> valutazione = "Mediocre";
-         }elseif ($this -> star == 2){
-           $this -> valutazione = "Media";
-         }elseif($this -> star == 3){
-           $this -> valutazione = "Buona";
-         }elseif($this -> star == 4){
-           $this -> valutazione = "Ottima";
+         if($this -> starToys == 1){
+           $this -> valutazioneToys = "Mediocre";
+         }elseif ($this -> starToys == 2){
+           $this -> valutazioneToys = "Media";
+         }elseif($this -> starToys == 3){
+           $this -> valutazioneToys = "Buona";
+         }elseif($this -> starToys == 4){
+           $this -> valutazioneToys = "Ottima";
          }else{
-           $this -> valutazione = "Eccellente";
+           $this -> valutazioneToys = "Eccellente";
          }
 
         return $this;
      }
 
     public function getValutazione(){
-      return $this -> valutazione;
+      return $this -> valutazioneToys;
     }
 
 }

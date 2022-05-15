@@ -1,76 +1,76 @@
 <?php
 
-class food{
-    public $name;
-    public $descrizione;
-    public $price;
-    public $star;
-    public $valutazione;
+class Food{
+    public $nameFood;
+    public $descrizioneFood;
+    public $priceFood;
+    public $starFood;
+    public $valutazioneFood;
 
-    public function __construct ($_name, $_descrizione, $_price){
-        $this -> setName($_name);
-        $this -> setDescrizione($_descrizione);
-        $this -> setPrice($_price);
+    public function __construct ($_nameFood, $_descrizioneFood, $_priceFood){
+        $this -> setName($_nameFood);
+        $this -> setDescrizione($_descrizioneFood);
+        $this -> setPrice($_priceFood);
         $this -> setStar();
         $this -> setValutazione();
       }
 
 //------------------------------- Star
   public function setStar(){
-    $this -> star = rand(1, 5);
+    $this -> starFood = rand(1, 5);
     return $this;
   }
 
   public function getStar(){
-    return $this -> star;
+    return $this -> starFood;
   }
 //------------------------------- Name
-     public function setName($_name){
-         $this -> name = $_name;
+     public function setName($_nameFood){
+         $this -> nameFood = $_nameFood;
        return $this;
      }
 
      public function getName(){
-         return $this -> name;
+         return $this -> nameFood;
        }
 //------------------------------- Description
-       public function setDescrizione($_descrizione){
-         $this -> descrizione = $_descrizione;
+       public function setDescrizione($_descrizioneFood){
+         $this -> descrizioneFood = $_descrizioneFood;
        return $this;
      }
 
      public function getDescrizione(){
-         return $this -> descrizione;
+         return $this -> descrizioneFood;
        }
 //------------------------------- Price
-       public function setPrice($_price){
-         $this -> price = $_price;
+       public function setPrice($_priceFood){
+         $this -> priceFood = $_priceFood;
        return $this;
      }
 
      public function getPrice(){
-         return $this -> price;
+         return $this -> priceFood;
        }
 //------------------------------- Valutazione
 
      public function setValutazione(){
-         if($this -> star == 1){
-           $this -> valutazione = "Mediocre";
-         }elseif ($this -> star == 2){
-           $this -> valutazione = "Media";
-         }elseif($this -> star == 3){
-           $this -> valutazione = "Buona";
-         }elseif($this -> star == 4){
-           $this -> valutazione = "Ottima";
+         if($this -> starFood == 1){
+           $this -> valutazioneFood = "Mediocre";
+         }elseif ($this -> starFood == 2){
+           $this -> valutazioneFood = "Media";
+         }elseif($this -> starFood == 3){
+           $this -> valutazioneFood = "Buona";
+         }elseif($this -> starFood == 4){
+           $this -> valutazioneFood = "Ottima";
          }else{
-           $this -> valutazione = "Eccellente";
+           $this -> valutazioneFood = "Eccellente";
          }
 
         return $this;
      }
 
     public function getValutazione(){
-      return $this -> valutazione;
+      return $this -> valutazioneFood;
     }
 
 }

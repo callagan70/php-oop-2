@@ -1,4 +1,8 @@
-<?
+<?php
+
+require __DIR__ . '../../extends/food.php';
+require __DIR__ . '../../extends/toy.php';
+
 
 class productName{
     public $name;

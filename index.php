@@ -1,8 +1,7 @@
 <?php 
 
 require __DIR__ . '/data/animal.php';
-require __DIR__ . '/extends/food.php';
-require __DIR__ . '/extends/toy.php';
+
 
 $monge = new productName ("Monge", "Pappa cani", 58);
 $purina = new productName ("Purina", "Pappa gatti", 68);
@@ -10,8 +9,8 @@ $purina = new productName ("Purina", "Pappa gatti", 68);
 $palla = new Toys ("Palla", "Pallina", 58);
 $corda = new Toys ("Corda", "Tessuto", 68);
 
-$crocchette = new food ("Crocchette", "Molto buone", 58);
-$umido = new food ("Umido", "Scatolette", 68);
+$crocchette = new Food ("Crocchette", "Molto buone", 58);
+$umido = new Food ("Umido", "Scatolette", 68);
 
 var_dump($monge);
 var_dump($purina);
@@ -41,10 +40,10 @@ Alcuni prodotti (es. antipulci) avranno la caratteristica che saranno disponibil
 </head>
 <body>
 
-
-    <p>Nome: <?= $monge -> name?></p>
-    <p> Stelle: <?php echo $monge -> star ?> </p>
-    <p> Valutazione: <?php echo $monge -> getValutazione() ?> </p>
+<br>
+    <span>Nome: <?= $monge -> name?></span> <br>
+    <span> Stelle: <?php echo $monge -> star ?> </span> <br>
+    <span> Valutazione: <?php echo $monge -> getValutazione() ?> </span>
     
 </body>
 </html>
